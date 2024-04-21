@@ -3,66 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>Main Page</title>
     <style>
         /* Add your CSS styles here */
-        .menu {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
+        .container {
+            display: flex;
         }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .content {
-            width: 50%;
-            float: left;
+        .left-div, .right-div {
+            flex: 1;
             padding: 20px;
         }
-        .clear {
-            clear: both;
+        .left-div {
+            background-color: #f0f0f0;
+        }
+        .right-div {
+            background-color: #e0e0e0;
         }
     </style>
-
-    <script>
-      window.markerConfig = {
-        project: '66221c615496f363236be206', 
-        source: 'snippet'
-      };
-    
-    !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
-    </script>
-    
 </head>
 <body>
-    
-<header>
-    <div class="logo">
-        <img src="logo.png" alt="Logo">
+
+<div class="container">
+    <div class="left-div">
+        <h2>Left Div</h2>
+        <p>This is the content of the left div.</p>
     </div>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="clear"></div>
-</header>
-
-
-    
-<div class="content">
-<iframe src="https://3dviewer.futurefashionsolution.com/?customerId=fe9caec8-6f2a-4709-b7f8-077f57451ec7&productId=ALAMY_donna" style="border: 0" allowFullScreen></iframe>
-</div>
-
-
-
-<div class="content">
-    <h2>Div 2</h2>
-    <p>This is the content of Div 2.</p>
+    <div class="right-div">
+        <h2>Right Div</h2>
+        <p>This is the content of the right div.</p>
+    </div>
 </div>
 
 </body>
